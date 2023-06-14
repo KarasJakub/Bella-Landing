@@ -1,5 +1,19 @@
+---
+import HeaderImage from "assets/Header/HeaderImage.png"
+import HeaderStrips from "assets/Header/HeaderStrips.png"
+import BellaIcon from "assets/CompanyIcons/BellaIcon.png"
+import FitnessIcon from "assets/CompanyIcons/FitnessIcon.png"
+import SpaIcon from "assets/CompanyIcons/SpaIcon.png"
+---
 
-
-<header class="w-100 h-full bg-dark">
-sdasdadsasd
+<header class="w-100   bg-dark relative">
+    <div class="w-full justify-center items-center gap-32 flex py-16">
+        <h2 class="text-7xl text-[#ffffff] font-detail font-bold hidden md:block">FITNESS</h2>
+        <img src={BellaIcon} alt="" class="max-w-[15rem]">
+        <h2 class="text-7xl text-[#ffffff] font-detail font-bold hidden md:block">SPA</h2>
+    </div>
+    <div class="relative overflow-hidden">
+        <img src={HeaderImage} alt="" class="absolute right-0">
+        <img src={HeaderStrips} alt="" class="z-10 absolute">
+    </div>
 </header>

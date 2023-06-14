@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['"Montserrat"', "sans-serif"],
-        secondary: ['"Fira Sans"', "sans-serif"]
+        secondary: ['"Fira Sans"', "sans-serif"],
+        detail: ['"Alegreya Sans"', "sans-serif"]
       }
     },
     colors: {
