@@ -10,9 +10,9 @@ interface Props {
 
 const OfferCard = ({ title, price, description, badges }: Props) => {
   return (
-    <div className="w-full max-w-xl h-full max-h-[80rem] rounded-full">
-      <div className="w-full h-3/5 py-28 px-20 bg-cardPrimary flex flex-col justify-center">
-        <h3 className="font-primary font-bold text-textGrey text-4xl tracking-[.2rem]">
+    <div className="w-full max-w-xl h-[60rem] overflow-hidden">
+      <div className="w-full h-3/5 py-28 px-16 bg-cardPrimary flex flex-col justify-center">
+        <h3 className="font-primary font-bold text-textGrey text-4xl tracking-[.2rem] text-center">
           {title}
         </h3>
         <h4 className="text-center font-primary text-[#fff] text-8xl font-bold mt-10">
@@ -26,7 +26,7 @@ const OfferCard = ({ title, price, description, badges }: Props) => {
           KUP TERAZ
         </button>
       </div>
-      <div className="w-full p-12 bg-cardSecondary">
+      <div className="w-full p-12 bg-cardSecondary h-full">
         {badges.map(badge => (
           <div className="flex">
             <img src={ApproveIcon} alt="" className="max-w-[2rem] mr-5" />

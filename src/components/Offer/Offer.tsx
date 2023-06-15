@@ -79,20 +79,22 @@ const OfferContent = [
 const Offer = () => {
   return (
     <div className="w-full bg-dark text-[#fff] flex justify-center">
-      <div className="w-11/12 flex justify-center flex-col">
-        <h2 className="text-center font-primary font-bold text-8xl my-48">
-          Skorzystaj już dziś z naszych letnich promocji:
-        </h2>
-        <div className="w-11/12 flex justify-center flex-col">
-          {OfferContent.map(offer => (
-            <OfferCard
-              key={offer.title}
-              title={offer.title}
-              price={offer.price}
-              description={offer.description}
-              badges={offer.badges}
-            />
-          ))}
+      <div className="flex justify-center">
+        <div className="w-full flex justify-center flex-col">
+          <h2 className="text-center font-primary font-bold text-5xl md:text-8xl my-24 lg:my-36">
+            Skorzystaj już dziś z naszych letnich promocji:
+          </h2>
+          <div className="w-full flex flex-row flex-wrap justify-center gap-12 md:gap-6 lg:gap-12 max-w-[140rem] mb-24 lg:mb-36">
+            {OfferContent.map(offer => (
+              <OfferCard
+                key={offer.title}
+                title={offer.title}
+                price={offer.price}
+                description={offer.description}
+                badges={offer.badges}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
