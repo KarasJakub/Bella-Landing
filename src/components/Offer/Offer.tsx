@@ -12,7 +12,8 @@ const OfferContent = [
       "Fitness, siłowania, SPA",
       "Opieka trenerska",
       "Bezpłatne zamrożenie 4tyg."
-    ]
+    ],
+    color: "from-green-lime to-green-lime-light"
   },
   {
     title: "ONEY RATY",
@@ -24,7 +25,8 @@ const OfferContent = [
       "Bezpłatne zamrożenie 4tyg.",
       "Wygodne raty",
       "Fitness, siłownia, SPA + opieka"
-    ]
+    ],
+    color: "from-blue to-blue-light"
   },
   {
     title: "3 MIESIĄCE STUDENT",
@@ -36,7 +38,8 @@ const OfferContent = [
       "Krótkie zobowiązanie",
       "Fitness, siłownia, SPA",
       "Opieka trenerska"
-    ]
+    ],
+    color: "from-purple to-purple-light"
   },
   {
     title: "3 MIESIĄCE STANDARD",
@@ -48,7 +51,8 @@ const OfferContent = [
       "Krótkie zobowiązanie",
       "Fitness, siłownia, SPA",
       "Opieka trenerska"
-    ]
+    ],
+    color: "from-red to-red-light"
   },
   {
     title: "UPFRONT STUDENT",
@@ -60,7 +64,8 @@ const OfferContent = [
       "Bezpłatne zamrożenie 4tyg.",
       "Fitness, siłownia, SPA",
       "Opieka trenerska"
-    ]
+    ],
+    color: "from-pink to-pink-light"
   },
   {
     title: "UPFRONT STANDARD",
@@ -72,7 +77,8 @@ const OfferContent = [
       "Bezpłatne zamrożenie 4tyg.",
       "Fitness, siłownia, SPA",
       "Opieka trenerska"
-    ]
+    ],
+    color: "from-yellow to-yellow-light"
   }
 ]
 
@@ -84,7 +90,7 @@ const Offer = () => {
           <h2 className="text-center font-primary font-bold text-5xl md:text-8xl my-24 lg:my-36">
             Skorzystaj już dziś z naszych letnich promocji:
           </h2>
-          <div className="w-full flex flex-row flex-wrap justify-center gap-12 md:gap-6 lg:gap-12 max-w-[140rem] mb-24 lg:mb-36">
+          <div className="flex flex-row flex-wrap justify-center gap-12 md:gap-6 lg:gap-12 max-w-[140rem] mb-24 lg:mb-36">
             {OfferContent.map(offer => (
               <OfferCard
                 key={offer.title}
@@ -92,6 +98,7 @@ const Offer = () => {
                 price={offer.price}
                 description={offer.description}
                 badges={offer.badges}
+                className={offer.color}
               />
             ))}
           </div>

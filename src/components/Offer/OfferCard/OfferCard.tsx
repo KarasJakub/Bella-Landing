@@ -1,16 +1,25 @@
 import React from "react"
 import ApproveIcon from "assets/CompanyIcons/approve.svg"
+import { twMerge } from "tailwind-merge"
 
 interface Props {
   title: string
   price: string
   description: string
   badges: string[]
+  className: string
 }
 
-const OfferCard = ({ title, price, description, badges }: Props) => {
+const OfferCard = ({
+  title,
+  price,
+  description,
+  badges,
+  className = ""
+}: Props) => {
   return (
-    <div className="w-full max-w-xl h-[60rem] overflow-hidden">
+    // shadow-md shadow-top-bottom-green bg-gray-300
+    <div className="w-11/12 md:w-full max-w-xl h-[60rem] overflow-hidden">
       <div className="w-full h-3/5 py-28 px-16 bg-cardPrimary flex flex-col justify-center">
         <h3 className="font-primary font-bold text-textGrey text-4xl tracking-[.2rem] text-center">
           {title}
@@ -19,10 +28,15 @@ const OfferCard = ({ title, price, description, badges }: Props) => {
           {price}
           <span className="text-6xl">zł</span>
         </h4>
-        <p className="text-center font-primary font-medium text-textGrey text-2xl tracking-[.2rem] my-6">
+        <p className="text-center font-primary font-semibold text-textGrey text-2xl tracking-[.2rem] my-5 min-h-[4rem]">
           {description}
         </p>
-        <button className="bg-[green] p-7 font-primary text-[#fff] font-bold text-3xl rounded-full mt-4 max-w-[15rem] self-center">
+        <button
+          className={twMerge(
+            "bg-gradient-to-r from-green-lime to-green-lime-light p-8 font-primary text-[#fff] font-bold text-3xl  mt-4 max-w-[15rem] self-center rounded-[1.5rem]",
+            className
+          )}
+        >
           KUP TERAZ
         </button>
       </div>
