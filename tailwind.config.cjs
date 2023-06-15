@@ -14,7 +14,7 @@ module.exports = {
     colors: {
       dark: "#0B0F13",
       primaryRed: "#FD0111",
-      textGrey: "#5f6265",
+      textGrey: "#BBBBBB",
       cardPrimary: "#212529",
       cardSecondary: "#1C1E22"
     }
