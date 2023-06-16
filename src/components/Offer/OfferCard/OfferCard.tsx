@@ -1,4 +1,3 @@
-import React from "react"
 import ApproveIcon from "assets/CompanyIcons/approve.svg"
 import { twMerge } from "tailwind-merge"
 
