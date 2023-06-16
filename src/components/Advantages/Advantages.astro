@@ -1,0 +1,39 @@
+---
+import AdvantagesCard from "components/Advantages/AdvantagesCard.astro"
+import ApproveBlackIcon from "assets/AdvantagesIcons/ApproveBlack.svg"
+import ApproveRedIcon from "assets/AdvantagesIcons/ApproveRed.svg"
+
+const Content = [
+    {
+        title: "Nasi trenerzy są zawsze gotowi pomóc i doradzić",
+        description: "darmowa opieka trenerska na siłowni, trening wprowadzający dla początkujących",
+        image: ApproveRedIcon
+    },
+    {
+        title: "Konsultacja treningowa",
+        description: "na starcie określiy cele, dokonamy analizy składu Twojego ciała, dowiesz się jak prawidłowo ćwiczyć i otrzymasz rozpisany plan treningowy",
+        image: ApproveBlackIcon
+    },
+    {
+        title: "Swoboda wyboru",
+        description: "1 karta członkowska uprawnia Cię do korzystania ze wszystkich klubów",
+        image: ApproveBlackIcon
+    },
+    {
+        title: "Strefa malucha",
+        description: "za darmo  możesz korzystać ze strefy malucha, gdzie pod okiem opiekunki Twoje dziecko spędzi czas w radosnej atmosferze",
+        image: ApproveRedIcon
+    },
+]
+
+---
+
+<div class="bg-primaryRed w-full p-10 lg:p-28 flex flex-col md:flex-row flex-wrap justify-center gap-10">
+    <div class="flex flex-col flex-wrap justify-center gap-10 lg:gap-20 md:flex-row max-w-[140rem]">
+        {Content.map((item) => (
+        <AdvantagesCard title={item.title} description={item.description} image={item.image} />
+        ))}
+
+
+    </div>
+</div>
