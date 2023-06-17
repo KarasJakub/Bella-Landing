@@ -13,7 +13,8 @@ const OfferContent = [
       "Opieka trenerska",
       "Bezpłatne zamrożenie 4tyg."
     ],
-    color: "from-green-lime to-green-lime-light"
+    color: "from-green-lime to-green-lime-light",
+    destination: "https://s.przelewy24.pl/AkyZnFH7Z5kh"
   },
   {
     title: "ONEY RATY",
@@ -26,7 +27,8 @@ const OfferContent = [
       "Wygodne raty",
       "Fitness, siłownia, SPA + opieka"
     ],
-    color: "from-blue to-blue-light"
+    color: "from-blue to-blue-light",
+    destination: ""
   },
   {
     title: "3 MIESIĄCE STUDENT",
@@ -39,7 +41,8 @@ const OfferContent = [
       "Fitness, siłownia, SPA",
       "Opieka trenerska"
     ],
-    color: "from-purple to-purple-light"
+    color: "from-purple to-purple-light",
+    destination: "https://s.przelewy24.pl/jTjT1ty1k7t5"
   },
   {
     title: "3 MIESIĄCE STANDARD",
@@ -52,7 +55,8 @@ const OfferContent = [
       "Fitness, siłownia, SPA",
       "Opieka trenerska"
     ],
-    color: "from-red to-red-light"
+    color: "from-red to-red-light",
+    destination: "https://s.przelewy24.pl/zLSDZ951VpMj"
   },
   {
     title: "UPFRONT STUDENT",
@@ -65,7 +69,8 @@ const OfferContent = [
       "Fitness, siłownia, SPA",
       "Opieka trenerska"
     ],
-    color: "from-pink to-pink-light"
+    color: "from-pink to-pink-light",
+    destination: "https://s.przelewy24.pl/d0WYWCxx9Jpw"
   },
   {
     title: "UPFRONT STANDARD",
@@ -78,7 +83,8 @@ const OfferContent = [
       "Fitness, siłownia, SPA",
       "Opieka trenerska"
     ],
-    color: "from-yellow to-yellow-light"
+    color: "from-yellow to-yellow-light",
+    destination: "https://s.przelewy24.pl/vrCH7xszJmPV"
   }
 ]
 
@@ -98,6 +104,7 @@ const Offer = () => {
                 price={offer.price}
                 description={offer.description}
                 badges={offer.badges}
+                destination={offer.destination}
                 className={offer.color}
               />
             ))}
