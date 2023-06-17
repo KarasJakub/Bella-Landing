@@ -7,6 +7,7 @@ interface Props {
   description: string
   badges: string[]
   className: string
+  destination: string
 }
 
 const OfferCard = ({
@@ -14,7 +15,8 @@ const OfferCard = ({
   price,
   description,
   badges,
-  className = ""
+  className = "",
+  destination
 }: Props) => {
   return (
     // shadow-md shadow-top-bottom-green bg-gray-300
@@ -30,14 +32,16 @@ const OfferCard = ({
         <p className="text-center font-primary font-semibold text-textGrey text-2xl tracking-[.2rem] my-5 min-h-[4rem]">
           {description}
         </p>
-        <button
-          className={twMerge(
-            "bg-gradient-to-r from-green-lime to-green-lime-light p-8 font-primary text-[#fff] font-bold text-3xl  mt-4 max-w-[15rem] self-center rounded-[1.5rem]",
-            className
-          )}
-        >
-          KUP TERAZ
-        </button>
+        <a href={destination} className="block self-center">
+          <button
+            className={twMerge(
+              "bg-gradient-to-r from-green-lime to-green-lime-light p-8 font-primary text-[#fff] font-bold text-3xl  mt-4 max-w-[15rem] rounded-[1.5rem]",
+              className
+            )}
+          >
+            KUP TERAZ
+          </button>
+        </a>
       </div>
       <div className="w-full p-12 bg-cardSecondary h-full">
         {badges.map(badge => (
