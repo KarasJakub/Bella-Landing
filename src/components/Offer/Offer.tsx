@@ -1,6 +1,5 @@
 import React from "react"
 import OfferCard from "./OfferCard/OfferCard"
-import { off } from "process"
 
 const OfferContent = [
   {
@@ -14,12 +13,13 @@ const OfferContent = [
       "Bezpłatne zamrożenie 4tyg."
     ],
     color: "from-green-lime to-green-lime-light",
-    destination: "https://s.przelewy24.pl/AkyZnFH7Z5kh"
+    destination: "https://s.przelewy24.pl/AkyZnFH7Z5kh",
+    btnDisplay: "true"
   },
   {
     title: "ONEY RATY",
     price: "139",
-    description: "miesięcznie na rok pierwszy miesiąc za 1 zł",
+    description: "do zakupu tylko w klubach",
     badges: [
       "Oszczędzasz 529zł!",
       "Stała cena przez cały rok",
@@ -28,7 +28,8 @@ const OfferContent = [
       "Fitness, siłownia, SPA + opieka"
     ],
     color: "from-blue to-blue-light",
-    destination: ""
+    destination: "",
+    btnDisplay: "false"
   },
   {
     title: "3 MIESIĄCE STUDENT",
@@ -42,7 +43,8 @@ const OfferContent = [
       "Opieka trenerska"
     ],
     color: "from-purple to-purple-light",
-    destination: "https://s.przelewy24.pl/jTjT1ty1k7t5"
+    destination: "https://s.przelewy24.pl/jTjT1ty1k7t5",
+    btnDisplay: "true"
   },
   {
     title: "3 MIESIĄCE STANDARD",
@@ -56,10 +58,11 @@ const OfferContent = [
       "Opieka trenerska"
     ],
     color: "from-red to-red-light",
-    destination: "https://s.przelewy24.pl/zLSDZ951VpMj"
+    destination: "https://s.przelewy24.pl/zLSDZ951VpMj",
+    btnDisplay: "true"
   },
   {
-    title: "UPFRONT STUDENT",
+    title: "UPFRONT UCZEŃ",
     price: "1155",
     description: "za cały rok",
     badges: [
@@ -70,7 +73,8 @@ const OfferContent = [
       "Opieka trenerska"
     ],
     color: "from-pink to-pink-light",
-    destination: "https://s.przelewy24.pl/d0WYWCxx9Jpw"
+    destination: "https://s.przelewy24.pl/d0WYWCxx9Jpw",
+    btnDisplay: "true"
   },
   {
     title: "UPFRONT STANDARD",
@@ -84,7 +88,8 @@ const OfferContent = [
       "Opieka trenerska"
     ],
     color: "from-yellow to-yellow-light",
-    destination: "https://s.przelewy24.pl/vrCH7xszJmPV"
+    destination: "https://s.przelewy24.pl/vrCH7xszJmPV",
+    btnDisplay: "true"
   }
 ]
 
@@ -106,6 +111,7 @@ const Offer = () => {
                 badges={offer.badges}
                 destination={offer.destination}
                 className={offer.color}
+                btnDisplay={offer.btnDisplay}
               />
             ))}
           </div>

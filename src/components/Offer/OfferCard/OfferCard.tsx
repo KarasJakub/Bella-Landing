@@ -8,6 +8,7 @@ interface Props {
   badges: string[]
   className: string
   destination: string
+  btnDisplay: string
 }
 
 const OfferCard = ({
@@ -16,7 +17,8 @@ const OfferCard = ({
   description,
   badges,
   className = "",
-  destination
+  destination,
+  btnDisplay
 }: Props) => {
   return (
     // shadow-md shadow-top-bottom-green bg-gray-300
@@ -34,6 +36,9 @@ const OfferCard = ({
         </p>
         <a href={destination} className="block self-center">
           <button
+            style={{
+              visibility: btnDisplay === "false" ? "hidden" : "visible"
+            }}
             className={twMerge(
               "bg-gradient-to-r from-green-lime to-green-lime-light p-8 font-primary text-[#fff] font-bold text-3xl  mt-4 max-w-[15rem] rounded-[1.5rem]",
               className
