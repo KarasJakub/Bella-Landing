@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 15" width="12" height="15">
+	<title>KARNET</title>
+	<defs>
+		<image  width="12" height="15" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAPCAMAAADnP957AAAAAXNSR0IB2cksfwAAAIpQTFRF/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QER/QERVn0xHQAAAC50Uk5TAAd64e2tF3f/xAw3QtbzKDbrPKWzaUjD19DT0Xls+gYfdKPc8v25jN/v8ebMVPE/2CYAAABoSURBVHicTc1HFoJQEETREgSaLIjkJNm0/+35oTl8avTupBsALop61XTwDBIzLQZts89wGO7ans+4BQLKfgDhPXrsGSdplhd5uXZV8wGKGrR07IlOoscgQRjPKGVP4uVsLq/359v9mj/tXwc6RV+cCAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<g id="KARNET">
+		<g id="MŁODZIEŻ">
+			<g id="CENA">
+				<use id="Zasób 1 kopia" href="#img1" x="0" y="0"/>
+			</g>
+		</g>
+	</g>
+</svg>
