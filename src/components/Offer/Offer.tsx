@@ -1,5 +1,6 @@
 import React from "react"
 import OfferCard from "./OfferCard/OfferCard"
+import OfferCardNew from "./OfferCard/OfferCardNew"
 
 const OfferContent = [
   {
@@ -102,7 +103,7 @@ const Offer = () => {
             Skorzystaj już dziś z naszych letnich promocji:
           </h2>
           <div className="flex flex-row flex-wrap justify-center gap-12 md:gap-6 lg:gap-12 max-w-[140rem] mb-24 lg:mb-36">
-            {OfferContent.map(offer => (
+            {/* {OfferContent.map(offer => (
               <OfferCard
                 key={offer.title}
                 title={offer.title}
@@ -113,7 +114,16 @@ const Offer = () => {
                 className={offer.color}
                 btnDisplay={offer.btnDisplay}
               />
-            ))}
+            ))} */}
+            <OfferCardNew
+              title={""}
+              price={""}
+              description={""}
+              badges={[]}
+              className={""}
+              destination={""}
+              btnDisplay={""}
+            />
           </div>
         </div>
       </div>

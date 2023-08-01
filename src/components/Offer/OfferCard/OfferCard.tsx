@@ -11,7 +11,7 @@ interface Props {
   btnDisplay: string
 }
 
-const OfferCard = ({
+const OfferCardNew = ({
   title,
   price,
   description,
@@ -62,4 +62,4 @@ const OfferCard = ({
   )
 }
 
-export default OfferCard
+export default OfferCardNew
