@@ -1,12 +1,22 @@
 ---
+import { SEO } from "astro-seo";
 ---
 
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <title>Bella Line - Twoja przygoda zaczyna się tutaj</title>
     <meta charset="UTF-8" />
-    <meta name="description" content="description" />
+    <SEO
+      title="Bella Line - Wielkie promocje cenowe"
+      description="Fitness Siłownia SPA"
+      openGraph={{
+        basic: {
+          title: "Bella Line - Wielkie promocje cenowe",
+          type: "website",
+          image: "https://promocja.bellaline.pl/PageImage.png",
+        }
+      }}
+    />
     <meta name="viewport" content="width=device-width" />
   </head>
   <body >
