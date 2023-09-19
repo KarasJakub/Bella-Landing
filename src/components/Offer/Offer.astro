@@ -1,5 +1,6 @@
+---
 import React from "react"
-import OfferCard from "./OfferCard/OfferCard"
+import OfferCardNew from "./OfferCard/OfferCardNew.astro"
 
 const OfferContent = [
   {
@@ -92,33 +93,20 @@ const OfferContent = [
     btnDisplay: "true"
   }
 ]
+---
 
-const Offer = () => {
-  return (
-    <div className="w-full bg-dark text-[#fff] flex justify-center">
-      <div className="flex justify-center">
-        <div className="w-full flex justify-center flex-col">
-          <h2 className="text-center font-primary font-bold text-5xl md:text-8xl my-24 lg:my-36">
+<div>
+    <div class="w-full bg-dark flex justify-center">
+      <div class="flex justify-center">
+        <div class="w-full flex justify-center flex-col">
+          <h2 class="text-center font-primary font-bold text-5xl md:text-8xl my-24 lg:my-36 text-[#fff]">
             Skorzystaj już dziś z naszych letnich promocji:
           </h2>
-          <div className="flex flex-row flex-wrap justify-center gap-12 md:gap-6 lg:gap-12 max-w-[140rem] mb-24 lg:mb-36">
-            {OfferContent.map(offer => (
-              <OfferCard
-                key={offer.title}
-                title={offer.title}
-                price={offer.price}
-                description={offer.description}
-                badges={offer.badges}
-                destination={offer.destination}
-                className={offer.color}
-                btnDisplay={offer.btnDisplay}
-              />
-            ))}
+          <div class="flex justify-center w-full max-w-[140rem] mb-24 lg:mb-36">
+            <OfferCardNew />
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  </div>
 
-export default Offer

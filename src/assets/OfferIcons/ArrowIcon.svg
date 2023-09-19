@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 13" width="12" height="13">
+	<title>1</title>
+	<defs>
+		<image  width="12" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAANCAMAAACq939wAAAAAXNSR0IB2cksfwAAAGlQTFRF7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u8nne+QAAACN0Uk5TADTa/+E3LtbgOSw2KsceK7wfgJhM7/BB7tvEId8pKKTU1cUGJuHeAAAAWElEQVR4nE3O1w6AIAxAUbSIOHHg3v7/R1pKE+zTPZAmFSKKAUAmwo9KUTpj5aSCVTpVNctIVNOyOgT0vu0Qfuzo2u9Mc3hXC/a6UdMF+0F9Xvp+Xr7mjw/2MAQIUvQHDQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<g id="1">
+		<g id="MŁODZIEŻ">
+			<use id="&gt;" href="#img1" x="0" y="0"/>
+		</g>
+	</g>
+</svg>
